@@ -1,81 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <title>Chase Vriend | Portfolio</title>
-</head>
-<body>
-    <nav>
-    <h1 class="heading-M">Chase Vriend</h1>
-    </nav>
-    <div class="container">
-      <div class="col-sm-6">
-        <img src="profile.jpg" alt="Profile Picture" width="400" height="400" class="img-fluid">
-      </div>
-        <div class="col-sm-4">
-          <h2 class="heading-XL">Hello!<br> I'm Chase Vriend.</h2>
-          <p class="body-L">Based in Orange County, CA. I'm a front-end developer passionate about 
-            building web apps that users can enjoy.</p>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Chase Vriend | Portfolio</title>
+    </head>
+    <body>
+        <nav>
+            <h2 class="heading-M">Chase Vriend</h2>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col float-right">
+                    <img src="profile.jpg" alt="Profile Image" height="400" width="400" class="profile-img">
+                </div>
+                <div class="col">
+                    <h1 class="heading-L">Nice to meet you! I'm Chase Vriend.</h1>
+                    <p class="body-L">Based in Orange County, I'm a Software Developer passionate about building web apps that users love</p>
+                </div>
+            </div>
         </div>
-        
-    </div>
-    <hr>
-    <div>
-      <h3 class="heading-L">HTML</h3>
-      <h3 class="heading-L">CSS</h3>
-      <h3 class="heading-L">Javascript</h3>
-    </div>
-    <h2 class="heading-XL">Projects</h2>
-    <div class="grid-container">
-      <div class="grid-item">
-        Design portfolio
-        HTML CSS
-        View project
-        View code
-      </div>
-      <div class="grid-item">
-        Design portfolio
-        HTML CSS
-        View project
-        View code
-      </div>
-      <div class="grid-item">
-        Design portfolio
-        HTML CSS
-        View project
-        View code
-      </div>
-      <div class="grid-item">
-        Design portfolio
-        HTML CSS
-        View project
-        View code
-      </div>
-      <div class="grid-item">
-        Design portfolio
-        HTML CSS
-        View project
-        View code
-      </div>
-      <div class="grid-item">
-        Design portfolio
-        HTML CSS
-        View project
-        View code
-      </div>
-    </div>
-    <div>
-      <h3 class="heading-XL">Contact</h3>
-      <p class="body-L">I would love to hear about your project and how I could help. Please 
-      fill in the form, and I’ll get back to you as soon as possible.</p>
-    </div>
-    <hr>
-    <footer>
-      <h1 class="heading-M">Chase Vriend</h1>
-    </footer>
-</body>
+        <br><hr><br>
+        <!-- Needs grid-container -->
+        <!-- Next time when adding images make sure to screenshot with the same measurements! -->
+        <!-- Need to make projects more responsive! -->
+        <div>
+            <h2 class="heading-XL">Projects</h2>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="calculator.jpeg" alt="calculator screenshot" height="300" width="300">
+                <h4 class="heading-M">CALCULATOR APP</h4>
+                <p class="body-L">HTML CSS JAVASCRIPT</p>
+            </div>
+            <div class="grid-item">
+                <img src="background-generator.jpeg" alt="background generator screenshot" height="300" width="300">
+                <h4 class="heading-M">BACKGROUND GENERATOR APP</h4>
+                <p class="body-L">HTML CSS JAVASCRIPT</p>
+            </div>
+            <div class="grid-item">
+                <img src="rps-game.jpeg" alt="rock, paper, scissors screenshot" height="300" width="300">
+                <h4 class="heading-M">ROCK, PAPER, SCISSORS GAME</h4>
+                <p class="body-L">HTML CSS JAVASCRIPT</p>
+            </div>
+            <div class="grid-item">
+                <img src="etch-sketch.jpeg" alt="etch a sketch screenshot" height="300" width="300">
+                <h4 class="heading-M">ETCH A SKETCH APP</h4>
+                <p class="body-L">HTML CSS JAVASCRIPT</p>
+            </div>
+        </div>
+        <div class="container contact">
+            <div class="row">
+            <div class="col">
+                <h3 class="heading-L">Contact Me</h3>
+                <p class="body-L">I would love to hear about your project and how I could help. Pleas fill in the form,
+                    and I'll get back to you as soon as possible.
+                </p>
+            </div>
+                <div class="row">
+                    <form action="https://formspree.io/f/xbjbwypb" method="post">
+                        <div class="message-icon">
+                            <i class="bi bi-telegram"></i>
+                        </div>
+                        <div id="input-field">
+                            <i class="bi bi-person"></i>
+                            <input type="text" placeholder="Name" name="Name">
+                        </div>
+                        <div id="input-field">
+                            <i class="bi bi-person"></i>
+                            <input type="text" placeholder="Phone No." name="Phone">
+                        </div>
+                        <div id="input-field">
+                            <i class="bi bi-person"></i>
+                            <input type="text" placeholder="Email Address" name="Email">
+                        </div>
+                        <div id="input-field">
+                            <i class="bi bi-chat-right-dots"></i>
+                            <textarea name="Message" placeholder="Message" rows="10"></textarea>
+                        </div>
+                        <input type="submit" value="Submit" class="send-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <h2 class="heading-M">Chase Vriend</h2>
+        </footer>
+    </body>
 </html>
